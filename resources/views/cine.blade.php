@@ -1,12 +1,11 @@
 @extends('cinestar')
 
 @section('contenido-interno')
-@foreach ($cine as $cine)
-<h2>{{$cine->RazonSocial}}</h2>
+<h2>{{$cine1[0]->RazonSocial}}</h2>
 				<div class="cine-info">
 					<div class="cine-info datos">
-						<p>{{$cine->Direccion}} -{{$cine->Detalle}}</p>
-						<p>Teléfono:{{$cine->Telefonos}}</p>
+						<p>{{$cine1[0]->Direccion}} -{{$cine1[0]->Detalle}}</p>
+						<p>Teléfono:{{$cine1[0]->Telefonos}}</p>
 						<br/>
 						<div class="tabla">
 							<div class="fila">
@@ -84,5 +83,4 @@
 					</span>
 				</div>
 
-@endforeach
 @endsection

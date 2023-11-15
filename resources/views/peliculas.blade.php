@@ -1,6 +1,6 @@
 @extends('cinestar')
 
-@endforeach
+
 @section('contenido-interno')
 <br/><h1>Cartelera</h1><br/>
 @foreach ($peliculas as $peliculas)
@@ -11,7 +11,7 @@
 						<p>{{$pelicula->Sinopsis}}</p>
 						<br/>
                        	<div class="boton-pelicula">
-                       		<a href="pelicula.html?id={{$pelicula->id}}" >
+                       		<a href="{{route('pelicula',$pelicula->id)}}" >
                        			<img src="img/varios/btn-mas-info.jpg" width="120" height="30" alt="Ver info"/>
                        		</a>
                			</div>

@@ -19,8 +19,8 @@ Route::get('/', function () {
 });
 Route::controller(CinestarController::class)->group(function(){
     Route::get('/', 'index');
-    Route::get('cines', 'cines');
-    Route::get('pelicula','pelicula');
-    Route::get('peliculas','peliculas');
-    Route::get('cine','cine');
+    Route::get('cines', 'cines')->name('cines');
+    Route::get('pelicula/{id}','pelicula')->name('pelicula');
+    Route::get('peliculas/{id}','peliculas')->name('peliculas');
+    Route::get('cine/{id}','cine')->name('cine');
 });

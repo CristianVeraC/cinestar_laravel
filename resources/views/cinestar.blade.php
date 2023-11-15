@@ -30,10 +30,10 @@
 				</span>
 				<span class="social">Síguenos en: </span>
 				<ul class="menu-principal">
-		    		<li class="menu-item"><a href="peliculas.html?idx=cartelera">Cartelera</a></li>
+		    		<li class="menu-item"><a href="{{route('peliculas','cartelera')}}">Cartelera</a></li>
 		       		<li class="menu-item"><a href="peliculas.html?idx=estrenos">Próximos estrenos</a></li>
 		       		<li class="menu-item"><a href="http://www.cinestar.com.pe/starcard">Star Card</a></li>
-		        	<li class="menu-item"><a href="cines.html">Nuestros Cines</a></li>
+		        	<li class="menu-item"><a href="{{route('cines')}}">Nuestros Cines</a></li>
 		        	<li class="menu-item"><a href="http://www.cinestar.com.pe/ventas_corporativas">Ventas Corporativas</a></li>
 		        	<li class="menu-item"><a href="http://www.cinestar.com.pe/promociones">Promociones</a></li>
 		        	<li class="menu-item"><a href="http://www.cinestar.com.pe/cinefilo_star">Blog</a></li>
