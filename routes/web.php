@@ -14,13 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 Route::controller(CinestarController::class)->group(function(){
-    Route::get('/', 'index');
-    Route::get('cines', 'cines')->name('cines');
-    Route::get('pelicula/{id}','pelicula')->name('pelicula');
-    Route::get('peliculas/{id}','peliculas')->name('peliculas');
+    Route::get('/', 'index')->name('/');
+    Route::get('cines','cines')->name('cines');
     Route::get('cine/{id}','cine')->name('cine');
+    Route::get('peliculas/{id}','peliculas')->name('peliculas');
+    Route::get('pelicula/{id}','pelicula')->name('pelicula');
 });
